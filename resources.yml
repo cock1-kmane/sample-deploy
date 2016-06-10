@@ -1,7 +1,7 @@
 resources:
   - name: vResourceImage1
     type: image
-    integration: cock1-hub #your account integration
+    integration: cock1-hub #subscription integration of hub
     source:
       name: "shiphitchcock1/testsamplenode"
       isPull: true
@@ -9,6 +9,7 @@ resources:
       
   - name: vResourceDockerOption1
     type: dockerOptions
+    integration: cock1-hub #subscription integration of AWS
     source:
       memory: 400 # in MB
       cpu-shares: 0
@@ -19,8 +20,8 @@ resources:
         
   - name: vResourceEcsParam1 #test once more
     type: params
+    integration: cock1-hub #subscription integration of AWS
     source:
       params:
         foo: bar
         api_url: https://api.shippable.com
-        
