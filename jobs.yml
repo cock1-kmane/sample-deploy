@@ -1,7 +1,5 @@
 jobs:
-  - name : vtestjob16
+  - name : vtestjob1
     type : manifest
     steps :
-      - GET vtestresource5
-      - PUT vtestresource5 
-      
+      - GET vResourceImage1
