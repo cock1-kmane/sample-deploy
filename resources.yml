@@ -1,13 +1,13 @@
 resources:
-  - name: vtestresource5
+  - name: vResourceImage1
     type: image
-    integration: shiphitchcock1-hub #your account integration
+    integration: cock1-hub #your account integration
     source:
       name: "shiphitchcock1/testsamplenode"
       isPull: true
       tag: latest
       
-  - name: resourcev-DockerOption
+  - name: vResourceDockerOption1
     type: dockerOptions
     source:
       memory: 400 # in MB
@@ -17,7 +17,7 @@ resources:
         - "name:/usr/bin:rw"
         - "/test/vol:/"
         
-  - name: resourcev-EcsParam #test once more
+  - name: vResourceEcsParam1 #test once more
     type: params
     source:
       params:
